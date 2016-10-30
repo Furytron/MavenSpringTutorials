@@ -8,6 +8,13 @@
 
     <build>
         <plugins>
+	        <plugin>            
+			  <groupId>org.apache.maven.plugins</groupId>
+			  <artifactId>maven-war-plugin</artifactId>
+			  <configuration>
+			    <webXml>src\main\webapp\WEB-INF\web.xml</webXml>        
+			  </configuration>
+			</plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -29,6 +36,14 @@
                     </execution>
                 </executions>
             </plugin>
+            
         </plugins>
     </build>
+    <dependencies>
+    	<dependency>
+    		<groupId>joda-time</groupId>
+    		<artifactId>joda-time</artifactId>
+    		<version>2.2</version>
+    	</dependency>
+    </dependencies>
 </project>
