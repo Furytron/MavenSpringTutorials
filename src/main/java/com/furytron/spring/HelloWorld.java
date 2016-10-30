@@ -10,5 +10,8 @@ public class HelloWorld {
 		System.out.println(greeter.sayHello());
 		
 		System.out.println("git checkout unstaging");
+		
+		System.out.println("Branch 2 part");
+		
 	}
 }
